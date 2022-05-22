@@ -6,8 +6,12 @@ LOCAL ?= $(shell test -d $(DESTDIR)/usr/local && echo "/local" || echo ""
 PREFIX ?= /usr$(LOCAL)
 
 build:
-	#  Build directives here
+	go build ./cmd/mjournal
 
+clean:
+	rm mjournal
+test:
+	go test ./cmd/mjournal
 install:
 	# Install directives here
 
