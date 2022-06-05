@@ -20,7 +20,7 @@ func GetEnvironmentPath() (string, error) {
     case "linux":
         appPath = filepath.Join(envy.Get("HOME", "~"), ".config", "mjournal")
     default:
-        err = fmt.Errorf("Unasupported Operating System - %s", runtime.GOOS)
+        err = fmt.Errorf("Unsupported Operating System - %s", runtime.GOOS)
     }
     return  appPath, err
 }

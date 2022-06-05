@@ -7,6 +7,8 @@ require (
 	github.com/DATA-DOG/go-sqlmock v1.5.0
 	github.com/gobuffalo/envy v1.10.1
 	github.com/lithammer/fuzzysearch v1.1.5
+	github.com/mattn/go-sqlite3 v1.14.13
+	github.com/qustavo/dotsql v1.1.0
 	github.com/stretchr/testify v1.7.0
 )
 
